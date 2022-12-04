@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" />
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css" />
+    <script src="./script.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jost:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+  </head>
+  <body>
+    <div class="main">
+      <div class="signup">
+        <label>Sign up</label>
+        <input type="text" id="username" placeholder="User name" required="" />
+        <input type="email" id="email" placeholder="Email" required="" />
+        <input
+          type="password"
+          id="password"
+          placeholder="Password"
+          required=""
+        />
+        <button onclick="createRegister()">Sign up</button>
+        <div class="row" style="display: flex; justify-content: center">
+          <a style="color: white; text-align: center" href="/login.html"
+            >Ja se cadastrou ? Realizar Login</a
+          >
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

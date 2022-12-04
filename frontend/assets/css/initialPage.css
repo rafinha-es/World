@@ -1,0 +1,215 @@
+#div1 {
+    font-size:48px;
+    margin-top: 50px;
+  }
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+  }
+  body {
+    background: #f1f1f1 !important;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode:forwards;
+    text-align:center !important;
+  }
+  article {
+    width: 400px;
+    background: #fff !important;
+    padding: 20px 20px 0;
+    font-size: 20px;
+    max-height: 270px;
+    overflow: hidden;
+    transition: max-height 1s;
+    text-align: justify;
+    margin-top: 20px;
+  }
+  p {
+    margin-bottom: 16px !important;
+    font-family: 'Kiwi Maru'; font-weight: 300; color: rgb(28, 0, 46) !important;
+  }
+  article.open {
+    max-height: 1000px;
+  }
+  button { /* tag button*/
+    background: rgb(28, 0, 46);
+    color: #fff ;
+    padding: 1rem;
+    border: none;
+    border-radius: 4px;
+    transition: 0.3s;
+  }
+  button:hover {
+    cursor: pointer;
+    background: rgb(148, 75, 194);
+  }
+  .wc-title{
+    font-family: 'Kiwi Maru'; 
+    font-weight: 300; 
+    color:rgb(28, 0, 46);
+  }
+  a{
+    transition: .5s color ease-in-out;
+  }
+  .map-button{ /*tag anchor*/
+    border-radius: 80%;
+    display: inline-block !important;
+    margin-top: 20px;
+  }
+  .photo-link{
+    border-radius: 80%;
+    display: inline-block !important;
+  }
+  .pictures{
+    display: inline-flex;
+  }
+  .linkedin-pictures{
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    margin-right: 20px;
+    margin-left: 20px;
+    padding: 5px;
+    border: 5px solid rgb(28, 0, 46);
+    border-collapse: separate;
+    border-spacing: 15px;
+    transition: transform .4s;
+  }
+  .linkedin-pictures:hover{
+    transform: scale(1.1)
+  }
+  .names{
+    display: inline-flex;
+  }
+  h3{
+    text-align: center;
+    font-family: 'Kiwi Maru' !important; 
+    font-weight: 300 !important; 
+    color:rgb(28, 0, 46) !important;
+  }
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
+
+/*css navbar*/
+.navbar-inverse{
+  border-color:rgb(28, 0, 46);
+  margin-top: 5px;
+}
+.container-fluid{
+  background-color: rgb(28, 0, 46);
+}
+.navbar-inverse .navbar-nav>li>a {
+  color: rgb(255, 255, 255);
+}
+.hoverable{
+  font-family: 'Kiwi Maru', serif;
+  display:inline-block;
+  backface-visibility: hidden;
+  vertical-align: middle;
+  position:relative;
+  box-shadow: 0 0 0px rgb(28, 0, 46);
+  transform: translateZ(0);
+  transition-duration: .3s;
+  transition-property:transform;
+  transition: .5s color ease-in-out;
+}
+
+.hoverable:before{
+  position:absolute;
+  pointer-events: none;
+  z-index:-1;
+  content: '';
+  top: 100%;
+  left: 5%;
+  height:10px;
+  width:90%;
+  opacity:0;
+  background: -webkit-radial-gradient(center, ellipse, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  background: radial-gradient(ellipse at center, rgba(255, 255, 255, 0.35) 0%, rgba(255, 255, 255, 0) 80%);
+  /* W3C */
+  transition-duration: 0.3s;
+  transition-property: transform, opacity;
+}
+
+.hoverable:hover, .hoverable:active, .hoverable:focus{
+  transform: translateY(-5px);
+}
+.hoverable:hover:before, .hoverable:active:before, .hoverable:focus:before{
+  opacity: 1;
+  transform: translateY(-5px);
+}
+
+
+
+@keyframes bounce-animation {
+  16.65% {
+    -webkit-transform: translateY(8px);
+    transform: translateY(8px);
+  }
+
+  33.3% {
+    -webkit-transform: translateY(-6px);
+    transform: translateY(-6px);
+  }
+
+  49.95% {
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);
+  }
+
+  66.6% {
+    -webkit-transform: translateY(-2px);
+    transform: translateY(-2px);
+  }
+
+  83.25% {
+    -webkit-transform: translateY(1px);
+    transform: translateY(1px);
+  }
+
+  100% {
+    -webkit-transform: translateY(0);
+    transform: translateY(0);
+  }
+}
+
+.bounce {
+  animation-name: bounce-animation;
+  animation-duration: 2s;
+}
+
+
+
+/*everything below here is just setting up the page, so dont worry about it */
+
+
+@media (min-width: 768px) {
+  .navbar{
+    text-align: center !important;
+    float: none;
+    display: inline-block;
+  }
+}
+
+nav {
+  background: none !important;
+  text-transform:uppercase;
+  /*li {
+    margin-left: 3em;
+    margin-right: 3em;
+    a{
+      transition: .5s color ease-in-out;
+    }
+  }*/
+}
