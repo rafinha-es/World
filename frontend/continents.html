@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kiwi+Maru&family=Orbitron"
+      rel="stylesheet"
+    />
+    <title>Mapa Mundi</title>
+    <link rel="icon" href="./assets/images/unesp.ico" />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/continentsSt.css" />
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css">
+    <link rel="stylesheet" href="assets/css/templatemo-tale-seo-agency.css">
+    <link rel="stylesheet" href="assets/css/owl.css">
+    <link rel="stylesheet" href="assets/css/animate.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <header class="header-area header-sticky" style="width: 100% !important;">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <nav class="main-nav">
+              <!-- ***** Logo Start ***** -->
+              <a href="index.html" class="logo">
+                <img src="./assets/images/logo.png" alt="" style="max-width: 200px;">
+              </a>
+              <!-- ***** Logo End ***** -->
+              <!-- ***** Menu Start ***** -->
+              <ul class="nav">
+              <div style="display: flex; height: 50px; margin-top: 2%; justify-content: end;"class="main-button"><a href="index.html">Home</a></div>
+              <a class='menu-trigger'>
+                <span>Menu</span>
+              </a>
+              <!-- ***** Menu End ***** -->
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+    <div
+      class="container row"
+      style="
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <div
+        class="card col"
+        style="height: 80%; background-color: #fff; margin-left: 20%; margin-top: 2%;"
+      >
+        <div class="row">
+          <h2 style="text-align: center; margin-top: 10% !important">
+            Descubra a qual continente o país pertence:
+          </h2>
+        </div>
+        <div class="row">
+          <p class="p1">
+            Agora você pode descobrir a qual continente o país que você buscar
+            pertente. Para isso basta escrever o nome do país.
+          </p>
+        </div>
+        <div class="row">
+          <img
+            src="https://i0.wp.com/resumos.mesalva.com/wp-content/uploads/2019/11/2-1.jpg?resize=500%2C316&ssl=1"
+          />
+        </div>
+        <p style="font-style: italic">
+          Lembre-se: O nome de todos os países deve ser escrito iniciando com
+          letra maiúscula.
+        </p>
+        <div
+          class="row form-floating"
+          style="display: flex; align-items: center; justify-content: center"
+        >
+          <input
+            id="pais"
+            class="form-control"
+            type="text"
+            placeholder="Digite o Nome de um País"
+            style="width: 70%; font-size: 14pt;"
+          />
+        </div>
+        <div class="row" style="display: flex; justify-content: center;">
+          <button style="border-radius: 20px;background-color: purple; width:200px; height: 50px; color:#fff; font-size: 12pt; margin: 5%;" onClick="searchContinent()">
+            Buscar Continente
+          </button>
+        </div>
+      </div>
+      <div
+        class="card col"
+        style="width: 35%; height: 80%; background-color: #fff"
+      >
+        <div class="row">
+          <h2
+            id="paisResult"
+            style="
+              color: #000 !important;
+              text-align: center;
+              margin-top: 10% !important;
+            "
+          >
+            Descobrindo...
+          </h2>
+        </div>
+        <div id="addImage" class="row"></div>
+      </div>
+    </div>
+    <script type="text/javascript" src="./assets/js/continents.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  </body>
+</html>

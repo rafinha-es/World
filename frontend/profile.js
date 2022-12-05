@@ -76,7 +76,7 @@ function updateData(){
       document.getElementById('local').innerHTML  = "<p>" + data[0].local + "</p>"
 
       setTimeout(function () {
-        window.location.href='/profile';
+        window.location.href='/profile.html';
       }, 2000);
     },
 })
